@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="describe_Maybe.cs" />
     <Compile Include="describe_ConditionalExpression.cs" />
+    <Compile Include="describe_Function.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

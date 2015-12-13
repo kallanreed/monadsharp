@@ -38,6 +38,7 @@
     <Compile Include="ConditionalExpressionExtensions.cs" />
     <Compile Include="MaybeExtensions.cs" />
     <Compile Include="MaybeExceptions.cs" />
+    <Compile Include="Function.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
