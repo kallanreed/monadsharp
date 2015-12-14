@@ -14,6 +14,11 @@ namespace MonadSharp
         {
             return Maybe<T>.None;
         }
+
+        public static Func<Maybe<T>, Maybe<TResult>> Lift<T, TResult>(Func<T, TResult> fn)
+        {
+            return x => x.FMap(fn);
+        }
     }
 
     // Implementation is based off F# ADT IL

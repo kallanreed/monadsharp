@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Maybe.cs" />
@@ -39,6 +40,9 @@
     <Compile Include="MaybeExtensions.cs" />
     <Compile Include="MaybeExceptions.cs" />
     <Compile Include="Function.cs" />
+    <Compile Include="IEnumerableExtensions.cs" />
+    <Compile Include="ParsingExtensions.cs" />
+    <Compile Include="PrimativeExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

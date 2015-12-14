@@ -7,6 +7,6 @@ namespace MonadSharp
     public class MaybeValueCannotBeNullException : Exception
     {
         public MaybeValueCannotBeNullException()
-            : base("Cannot build Maybe.Some<T> with null. Use Maybe.None instead.") { }
+            : base("Cannot build Maybe<T>.Some with null. Use Maybe<T>.None instead.") { }
     }
 }
