@@ -45,6 +45,16 @@ namespace MonadSharp
         {
             yield return o;
         }
+
+        public static Maybe<T> AsMaybe<T>(this IEnumerable<T> source)
+        {
+            using (var e = source.GetEnumerator()) {
+                if(e.MoveNext())
+                    return Maybe.Some(e.Current);
+                else
+                    return Maybe.None<T>();
+            }
+        }
     }
 }
 

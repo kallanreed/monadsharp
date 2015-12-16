@@ -34,11 +34,14 @@
     <Reference Include="nunit.framework">
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="describe_Maybe.cs" />
     <Compile Include="describe_ConditionalExpression.cs" />
     <Compile Include="describe_Function.cs" />
+    <Compile Include="describe_MaybeExtensions.cs" />
+    <Compile Include="describe_IEnumerableExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
