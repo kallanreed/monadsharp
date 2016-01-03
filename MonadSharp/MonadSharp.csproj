@@ -43,6 +43,9 @@
     <Compile Include="IEnumerableExtensions.cs" />
     <Compile Include="ParsingExtensions.cs" />
     <Compile Include="PrimativeExtensions.cs" />
+    <Compile Include="Either.cs" />
+    <Compile Include="EitherExtensions.cs" />
+    <Compile Include="EitherExceptions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

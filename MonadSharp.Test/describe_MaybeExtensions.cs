@@ -20,7 +20,7 @@ namespace MonadSharp.Test
             }
 
             [Test]
-            public void given_none_it_should_return_empth_enumerable()
+            public void given_none_it_should_return_empty_enumerable()
             {
                 var none = Maybe.None<int>();
                 var enumNone = none.AsEnumerable();

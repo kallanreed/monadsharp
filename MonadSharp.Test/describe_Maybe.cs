@@ -56,5 +56,22 @@ namespace MonadSharp.Test
             
             Assert.AreEqual(Maybe.Some(value), some);
         }
+
+        [Test]
+        public void try_invoke_should_return_some_value()
+        {
+            var value = 5;
+            var some = Maybe.TryInvoke(() => int.Parse(value.ToString()));
+
+            Assert.AreEqual(value, some.Value());
+        }
+
+        [Test]
+        public void try_invoke_should_return_none_if_expression_throws()
+        {
+            var none = Maybe.TryInvoke(() => int.Parse("not int"));
+            
+            Assert.AreEqual(Maybe.None<int>(), none);
+        }
     }
 }

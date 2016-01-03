@@ -19,6 +19,18 @@ namespace MonadSharp
         {
             return x => x.FMap(fn);
         }
+
+        public static Maybe<T> TryInvoke<T>(Func<T> fn)
+        {
+            try
+            {
+                return Maybe.Some(fn());
+            }
+            catch
+            {
+                return Maybe.None<T>();
+            }
+        }
     }
 
     // Implementation is based off F# ADT IL

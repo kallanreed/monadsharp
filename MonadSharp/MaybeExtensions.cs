@@ -5,7 +5,7 @@ using System.Linq;
 namespace MonadSharp
 {
     // TODO: these functions need to use "Function.Apply"
-    // so that Functor and Applicative works
+    // so that Functor and Applicative work
 
     public static class MaybeExtensions
     {
