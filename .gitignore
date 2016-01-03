@@ -13,6 +13,9 @@
 # Mac files
 .DS_Store
 
+# NuGet
+*.nupkg
+
 #NUnit
 test-results
 

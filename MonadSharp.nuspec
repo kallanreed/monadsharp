@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MonadSharp_KR</id>
+    <version>0.0.1</version>
+    <authors>kallanreed</authors>
+    <owners>kallanreed</owners>
+    <title>Monad Sharp</title>
+    <licenseUrl>https://github.com/kallanreed/monadsharp/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kallanreed/monadsharp</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# implementations of some common monadic types including Maybe, Either and extensions for IEnumerable. The library attempts to provide an intuitive API and decent syntax to keep calling code as readable as is possible in C#.</description>
+    <summary>A collection of monads for C# that provide some functional programming flavor.</summary>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>monad maybe either functional</tags>
+  </metadata>
+  <files>
+    <file src="MonadSharp/bin/Release/MonadSharp.dll" target="lib\net40" />
+  </files>
+</package>
