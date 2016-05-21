@@ -36,7 +36,6 @@
   <ItemGroup>
     <Compile Include="Maybe.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="ConditionalExpressionExtensions.cs" />
     <Compile Include="MaybeExtensions.cs" />
     <Compile Include="MaybeExceptions.cs" />
     <Compile Include="Function.cs" />
@@ -46,6 +45,7 @@
     <Compile Include="Either.cs" />
     <Compile Include="EitherExtensions.cs" />
     <Compile Include="EitherExceptions.cs" />
+    <Compile Include="ConditionalExpression.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

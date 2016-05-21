@@ -24,6 +24,7 @@ namespace MonadSharp
             return m.IsNone ? Maybe.None<TResult>() : fn(m.Value());
         }
 
+        // TODO: needs overload that takes a function as 'this'
         public static Maybe<TResult> Apply<T, TResult>(this Maybe<T> m, Maybe<Func<T, TResult>> fn)
         {
             return m.IsNone || fn.IsNone ? Maybe.None<TResult>() : Maybe.Some(fn.Value()(m.Value()));
